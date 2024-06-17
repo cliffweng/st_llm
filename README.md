@@ -8,7 +8,7 @@ Clone this repo to your local machine, and replace all the 'wengs' with your nam
 ## Development with Docker
 Run the following commands to build the dev docker image and run the container that use local files throughout development process:
 ```
-stpodman build -t st .
+podman build -t st .
 podman run -p 8501:8501 -p 8888:8888 --name st -v %cd%:/home/streamlit st
 ```
 ### Jupyter
